@@ -5,7 +5,7 @@ import java.util.Scanner;
 //define a class 
 public class Bicycle {
     //define a method
-    public static void main(String[] args) {;
+    public static void main(String[] args) {
     //Begin
     Scanner myScanner;
     myScanner= new Scanner( System.in );

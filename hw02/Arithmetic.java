@@ -25,7 +25,7 @@ public class Arithmetic {
         System.out.println("Total cost of taxes is "+totalcostTaxes+" dollars.");
         totalcostBeforeTaxes=totalcostSocks+totalcostGlasses+totalcostEnvelopes; //The total cost before counting the taxes
         System.out.println("Total cost before counting the taxes is "+totalcostBeforeTaxes+" dollars.");
-        totalcostPaid=totalcostBeforeTaxes+totalcostTaxes; //The total cost that should be paid
+        totalcostPaid=totalcostBeforeTaxes+totalcostTaxes; //The total cost that should be paidd
         System.out.println("Total cost that is paid is "+totalcostPaid+" dollars.");
     }
 }
