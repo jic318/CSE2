@@ -9,9 +9,9 @@ public class BigMac {
         //Begin
         Scanner myScanner;
         myScanner = new Scanner( System.in );
-        System.out.print("Enter the number of Big Macs (an integer >0: " );
+        System.out.print("Enter the number of Big Macs (an integer >0): " );
         int nBigMacs=myScanner.nextInt();
-        System.out.print("Enter the cost per Big Mac "+"a double (in the form xx.xx: ");
+        System.out.print("Enter the cost per Big Mac "+"a double (in the form xx.xx): ");
         double bigMac$ = myScanner.nextDouble();
         System.out.print("Enter the percent tax as a whole number (in a form xx): ");
         double taxRate = myScanner.nextDouble();
