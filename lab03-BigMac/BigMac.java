@@ -22,7 +22,7 @@ public class BigMac {
         dollars=(int)cost$;
         dimes=(int)(cost$*10)%10;
         pennies=(int)(cost$*100)%10;
-        System.out.print("The total cost of "+nBigMacs+" Big Macs, at $"+bigMac$+" per Big Mac, with a "+"sales tax of "+(int)(taxRate*100)+"%, is $"+dollars+dimes+pennies);
+        System.out.print("The total cost of "+nBigMacs+" Big Macs, at $"+bigMac$+" per Big Mac, with a "+"sales tax of "+(int)(taxRate*100)+"%, is $"+dollars+"."+dimes+pennies);
         
     } 
 }
