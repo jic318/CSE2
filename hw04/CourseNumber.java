@@ -15,8 +15,8 @@ public class CourseNumber {
             int number=S.nextInt();
             if (number<=201440&&number>=186510) {
                 int CN, YN;
-                YN=(int)number/100;
-                CN=number-YN*100;
+                YN=(int)number/100;//number of years
+                CN=number-YN*100;//number of semester
                 if (CN==10) {
                     System.out.println("The course was offered in the spring semester of "+YN);
                 }//Spring Semester

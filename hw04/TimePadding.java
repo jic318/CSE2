@@ -16,8 +16,8 @@ public class TimePadding {
             int R1, R2, hr, min, sec1;
             if (sec<=86400&&sec>=0) {
             if (sec<3600) {
-                sec1=sec%60;
-                min=(sec-sec1)/60;
+                sec1=sec%60;//calculate seconds
+                min=(sec-sec1)/60;//calclate minutes
                 if (min<10&&sec1>=10) {
                     System.out.println("The time is 00:0"+min+":0"+sec1);
                 }//min<10
@@ -34,9 +34,9 @@ public class TimePadding {
             else {
                 R1=sec%3600;
                 R2=R1%60;
-                hr=(sec-R1)/3600;
-                min=(R1-R2)/60;
-                sec1=R2;
+                hr=(sec-R1)/3600;//calculate hours
+                min=(R1-R2)/60;//calculate minutes
+                sec1=R2;//calculate seconds
                 if (hr<10&&min>=10&&sec1>=10) {
                     System.out.println("The time is 0"+hr+":"+min+":"+sec1);
                 }//hr<10, min&sec>=10
