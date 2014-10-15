@@ -22,7 +22,7 @@ public class BoolaBoola {
               break;
           default:
               F=false;
-      }
+      }//define the first variable
       Katsu=(int)(Math.random()*2);
       switch (Katsu) {
           case 0:
@@ -33,7 +33,7 @@ public class BoolaBoola {
               break;
           default:
         	  S1=false;
-      }
+      }//define the second variable
       Katsu=(int)(Math.random()*2);
       switch (Katsu) {
           case 0:
@@ -44,7 +44,7 @@ public class BoolaBoola {
               break;
           default:
         	  T=false;
-      }//define the variables
+      }//define the third variable
       Handan=(int)(Math.random()*4);
       switch (Handan) {
           case 0:
