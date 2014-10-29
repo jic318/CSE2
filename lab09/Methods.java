@@ -17,8 +17,25 @@ public class Methods{
 
   }
   public static int getInt (Scanner a) {
-  	int a1=a.nextInt();
-  	return a1;
+  	
+  	if (a.hasNextInt()) {
+  		int a1=a.nextInt();
+  		return a1;
+  	}
+  	else {
+  	  int a2;
+  	  Scanner S;
+  	  S= new Scanner(System.in);
+  		for (int i=1; i>0&&!S.hasNextInt(); i++) {
+  			S= new Scanner (System.in);
+  		  System.out.println("Error!");	
+  		  
+  		
+  	}
+  	a2=S.nextInt();
+  	return a2;
+  		
+  	}
   }
   public static int larger (int a, int b) {
   	if (a>b) {
