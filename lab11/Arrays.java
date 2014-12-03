@@ -9,15 +9,16 @@ public class Arrays {
            int sc=scan.nextInt();
            array[i]=sc;
        }
-       int mi=5;
-       for (int j=0;j<10;j++){
-           mi=Math.min(mi,array[j]);
-       }
-       System.out.println("The lowest entry is "+mi);
        int mx=0;
        for (int h=0;h<10;h++){
            mx=Math.max(mx,array[h]);
        }
+       int mi=mx;
+       for (int j=0;j<10;j++){
+           mi=Math.min(mi,array[j]);
+       }
+       System.out.println("The lowest entry is "+mi);
+       
        System.out.println("The highest entry is "+mx);
        int sum=0;
        for (int y=0;y<10;y++){
