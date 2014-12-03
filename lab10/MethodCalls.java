@@ -11,41 +11,38 @@ public class MethodCalls{
         System.out.println("Join 87, 42, and 83 to get "+join(87, join(42,83)));
         System.out.println("Join -9 and -90 to get "+join(-9,-90));
     }
-    public static int addDigit (int a, int b) {
-        int RE;
-        String s="", s1="", s2="";
-        if (a>=0) {
-            s1+=b;
-            s2+=a;
-            s=s1+s2;
-            
-        }
-        else {
-            int n=-a;
-            s1+=b;
-            s2+=n;
-            s="-"+s1+s2;
-            
-        }
-        RE=(int)s;
-        return RE;
-    }
-    public static int join (int a, int b) {
-        int RE;
-        String s="", s1="", s2="";
-        if (a>0&&b>0) {
-            s1+=a;
-            s2+=b;
-            s=s1+s2;
-        }
-        else {
-            int n1=-a, n2=-b;
-            s1+=n1;
-            s2+=n2;
-            s=s1+s2;
-        }
-        RE=(int)s;
-        return RE;
+    
+    public static int addDigit(int num,int digit){
+
+            String dig=String.valueOf(digit);
+            if (num>=0) {
+               String No=String.valueOf(num);
+               String answer=dig.concat(No);
+               int ans=Integer.parseInt(answer);
+               return ans;
+            }
+            else{
+                int positive=Math.abs(num);
+                String No=String.valueOf(positive);
+                String answer="-"+dig.concat(No);
+                int ans=Integer.parseInt(answer);
+                return ans;
+            }
+        
     }
     
+    public static int join(int x,int y){
+        int x1=Math.abs(x);
+        int y1=Math.abs(y);
+        int answer=addDigit(y1,x1);
+        return answer;
+    }
 }  
+/*
+Add 3 to 784 to get 3784
+Add 3, 4, and 5 to 784 to get 543784
+Add 3 to -98 to get: -398
+Join 784 to 22 to get 78422
+Join 87, 42, and 83 to get 874283
+Join -9 and -90 to get 990
+*/
